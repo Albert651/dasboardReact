@@ -1,0 +1,83 @@
+.sidebar-container {
+    position: relative;
+    width: 250px;
+    background-color: #2E0219;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.toggle-icon {
+    position: absolute;
+    font-size: 10px;
+    top: 4.7rem;
+    left: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #dde6dd;
+    
+}
+
+.menu{
+    margin-top: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+    height: 94vh;
+    transition: all 0.3s ease-in-out;
+    background: transparent;
+    position: fixed;
+    
+}
+
+.logo{
+    text-align: center;
+    padding: 20px;
+    color: #e9f0fa;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+.logo-icon{
+    font-size: 2.4rem;
+}
+.menu--list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.menu--list .item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    color: #e9f0fa;
+}
+.menu--list .item:hover{
+    cursor: pointer;
+    color: #dde6dd ;
+    background: #C60F7B ;
+    transform: scale(1.04);
+}  
+/*****************************tyle de sidebar none **************************************/
+.sidebar-container.collapsed .menu--list .text {
+    display: none; /* Masquer le texte quand la barre latérale est réduite */
+}
+
+.sidebar-container .menu--list .item {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-container .menu--list .icon {
+    margin-right: 10px;
+}
+
+/* Réduire la taille du logo */
+.sidebar-container.collapsed .logo-primaire img {
+    width: 50px;
+}

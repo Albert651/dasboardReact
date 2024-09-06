@@ -1,0 +1,47 @@
+
+.liste--header{
+    display: flex;
+    color: #fff;
+    margin: 2rem 0;
+    justify-content: space-between;
+ 
+}
+.liste--header select{
+    border-radius: 10px;
+    border: none;
+    padding: 8px 12px;
+    border: 1px solid #dde6ed;
+    color: #27374d;
+}
+.liste--header select > option :hover{
+    background: #C60F7B;
+}
+.list--container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.list{
+    display: flex;
+    padding-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+    
+}
+.proff--detail{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+}
+.proff--detail img{
+    width: 50px;
+    background: #dde6ed;
+    border-radius: 50%;
+}
+.list:hover{
+    background: #C60F7B ;
+    border-radius: 10px;
+}
